@@ -1,0 +1,20 @@
+body{
+    background: black;
+}
+h1{
+    color:white;
+}
+.game{
+    background-color:brown;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66px;
+    width:30%;
+}
+#container{
+    margin:0 auto;
+    max-width: 600px;
+}
+#messageDisplay{
+    color: white;
+}
