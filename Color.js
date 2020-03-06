@@ -1,12 +1,37 @@
 var colors = generateRandomColors(6);
 
 var squares = document.querySelectorAll(".game");
-var pickedColor = pickColor();
+var pickedColor = pickColor(6);
 var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay = document.querySelector("#messageDisplay");
 var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
+var easy=document.querySelector("#easy");
 
+/*easy.addEventListener("click",function(){
+	colors=generateRandomColors(3);
+	pickColor=pickColor();
+	for(var i=0;i<colors.length;i++){
+		squares[i].style.background=colors[i];
+	}
+	squares[i].addEventListener("click", function() {
+		//grab color of clicked squares
+		var clickedColor = this.style.background;
+		//compare color to pickedColor
+		if(clickedColor === pickedColor) {
+			messageDisplay.textContent = "Correct!";
+			resetButton.textContent = "Play Again?";
+			changeColors(clickedColor);
+			h1.style.background = clickedColor;
+		} else {
+			this.style.background = "#232323";
+			messageDisplay.textContent = "Try Again";
+		}
+	});
+});
+
+colorDisplay.textContent = pickedColor;
+*/
 resetButton.addEventListener("click", function() {
 	//generate all new colors
 	colors = generateRandomColors(6);
