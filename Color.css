@@ -1,8 +1,22 @@
 body{
-    background: black;
+    margin: 0px;
+    padding: 0px;
+    background: #232323;;
 }
 h1{
+    margin: 0px;
+    text-align: center;
     color:white;
+    background: steelblue;
+    line-height: 1.1;
+    font-weight:normal;
+    text-transform: uppercase;
+    padding: 20px 0;
+    
+}
+span{
+    display: inline-block;
+    width: 20%;
 }
 .game{
     background-color:brown;
@@ -10,11 +24,39 @@ h1{
     float: left;
     margin: 1.66px;
     width:30%;
+    border-radius: 20px;
+    margin: 10px;
+    transition: background 0.6;
 }
 #container{
     margin:0 auto;
     max-width: 600px;
 }
 #messageDisplay{
+    color:blue;
+}
+.selected{
+    background: steelblue;
     color: white;
+}
+.option{
+    background: white;
+    text-align: center;
+    height: 30px;
+    color: black;
+}
+button{
+    background: none;
+    border:none;
+    text-transform: uppercase;
+    height: 100%;
+    color:steelblue;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 2.0s;
+    outline: none;
+}
+button:hover{
+    color: white;
+    background: steelblue;
 }
