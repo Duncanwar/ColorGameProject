@@ -1,38 +1,63 @@
-.App {
+body{
+  margin: 0px;
+  padding: 0px;
+  background: #232323;;
+}
+h1{
+  margin: 0px;
   text-align: center;
+  color:white;
+  background: steelblue;
+  line-height: 1.1;
+  font-weight:normal;
+  text-transform: uppercase;
+  padding: 20px 0;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+span{
+  display: inline-block;
+  width: 20%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.squares{
+  background-color:brown;
+  padding-bottom: 30%;
+  float: left;
+  margin: 1.66px;
+  width:30%;
+  border-radius: 20px;
+  margin: 10px;
+  transition: background 0.6;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#container{
+  margin:0 auto;
+  max-width: 600px;
+}
+#messageDisplay{
+  color:blue;
+}
+.selected{
+  background: steelblue;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#option{
+  background: white;
+  text-align: center;
+  height: 30px;
+  color: black;
+  width: 100%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+  background: none;
+  border:none;
+  text-transform: uppercase;
+  height: 100%;
+  color:steelblue;
+  letter-spacing: 1px;
+  font-size: inherit;
+  transition: all 2.0s;
+  outline: none;
+}
+button:hover{
+  color: white;
+  background: steelblue;
 }
