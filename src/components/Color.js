@@ -54,7 +54,7 @@ class Color extends React.Component{
          const {generatecolor,level,secretIndex,gameState} = this.state
          const secretColor = generatecolor[secretIndex]      
          let squares = generatecolor.map((x,i)=>{
-         return <div className="squares" style={{background:x}} onClick={this.handleClick.bind(null,i)} key={i}></div>
+         return <div className="squares" style={{background:x , flex:1}} onClick={this.handleClick.bind(null,i)} key={i}></div>
         })
         const messageDisplay = gameState === 'correct' ? 'correct' :gameState =='wrong'?  'wrong' : ''
         const headerColor = gameState === 'correct' ? secretColor : 'steelblue'
