@@ -1,7 +1,7 @@
 body{
   margin: 0px;
   padding: 0px;
-  background: #232323;;
+  background: #232323;
 }
 h1{
   margin: 0px;
@@ -17,16 +17,6 @@ h1{
 span{
   display: inline-block;
   width: 20%;
-}
-.squares{
-  /* background-color:brown; */
-  padding-bottom: 30%;
-  float: left;
-  margin: 1.66px;
-  width:30%;
-  border-radius: 20px;
-  margin: 10px;
-  transition: background 0.6;
 }
 #container{
   margin:0 auto;
@@ -60,4 +50,13 @@ button{
 button:hover{
   color: white;
   background: steelblue;
+}
+.squares{
+  padding-bottom: 30%;
+  float: left;
+  margin: 1.66px;
+  width:30%;
+  border-radius: 20px;
+  margin: 10px;
+  transition: background 0.6;
 }

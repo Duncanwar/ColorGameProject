@@ -3,7 +3,7 @@ export const randomColor=()=>{
     const g= Math.floor(Math.random () *256);
     const b= Math.floor(Math.random () *256);
 
-    return `rgb{${r}, ${g}, ${b}}`
+    return `rgb(${r}, ${g}, ${b})`
 }
 
 export const generateRandomColor=num => {
@@ -12,4 +12,8 @@ export const generateRandomColor=num => {
         arr.push(randomColor())
     }
     return arr
+}
+export const pickColor=num=>{
+    const picked= Math.floor(Math.random()*num)
+    return picked
 }
