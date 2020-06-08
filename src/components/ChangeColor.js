@@ -1,36 +1,15 @@
-import React from 'react'
-import Headings from './Headings'
-import './style.css'
+export const randomColor=()=>{
+    const r= Math.floor(Math.random()*256);
+    const g= Math.floor(Math.random () *256);
+    const b= Math.floor(Math.random () *256);
 
-class ChangeColor extends React.Component{
-
-    constructor(props){
-        super(props);
-       this.randomColor=this.randomColor.bind(this);
-    }
-    randomColor(){
-        
-       var squares = document.querySelectorAll('.squares')
-       squares.addEventListener("click",(event)=>{
-alert("Ok")
-       })
-      
-    }
-    
-    render(){
-        return(
-            <div>
-                <Headings />
-                <div onClick={this.randomColor} id="container">
-                <div className="squares"></div>
-                <div className="squares"></div>
-                <div className="squares"></div>
-                <div className="squares"></div>
-                <div className="squares"></div>
-                <div className="squares"></div>
-                </div>
-            </div>
-        )
-    }
+    return `rgb{${r}, ${g}, ${b}}`
 }
-export default ChangeColor;
+
+export const generateRandomColor=num => {
+    var arr = []
+    for (let i=0;i<num;i++){
+        arr.push(randomColor())
+    }
+    return arr
+}
